@@ -1,0 +1,28 @@
+print(frase.upper().isupper()) //boolean
+print(len(frase)) //tamanho da variavél
+print(frase[0]) //o q tinha na posição
+print(frase.index("l")) //qual a posição
+print(frase.replace("x", "y")) //troca x por y
+print(str(my_num) + " numero favorito") //numero com string
+
+name = input("Nome")
+print("oii " +name+ " ")
+
+//calculadora
+num1 = input("numero 1: ")
+num2 = input("numero 2: ")
+result = int(num1) + int(num2)
+
+print(result)
+
+variavel.insert(posição, "nome") //insere
+variavel.extend //adiciona outra variavel
+variavel.apend //coloca no final
+variavel.remove(nome) //remove um nome
+variavel.clear//apaga a variavel
+variavel.pop//remove o ultimo
+variavel.index(nome)//indica a posição
+variavel.count(nome)//quantas vezes o nome aparece
+variavel.sort//organiza em ordem alfabetica ou numerica
+variavel.reverse//inverte as posições
+variavel.copy//copia e cola os valores de uma variavel em outra
