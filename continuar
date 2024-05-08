@@ -1,0 +1,17 @@
+secret_word = "big ed"
+guess = ""
+times = 0
+limite = 3
+out_of_guesses = False
+
+while guess != secret_word and not (out_of_guesses):
+    if times < limite:
+       guess = input("tentativa: ")
+       times += 1
+    else:
+    out_of_guesses = True
+
+
+
+
+print("Parabeinss")
