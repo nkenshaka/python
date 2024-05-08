@@ -8,7 +8,7 @@ print(str(my_num) + " numero favorito") //numero com string
 name = input("Nome")
 print("oii " +name+ " ")
 
-//calculadora
+////////////////////calculadora
 num1 = input("numero 1: ")
 num2 = input("numero 2: ")
 result = int(num1) + int(num2)
@@ -30,7 +30,7 @@ else:
 
 print(result)
 
-//listas
+//////////////////listas
 variavel.insert(posição, "nome") //insere
 variavel.extend //adiciona outra variavel
 variavel.apend //coloca no final
@@ -43,24 +43,24 @@ variavel.sort//organiza em ordem alfabetica ou numerica
 variavel.reverse//inverte as posições
 variavel.copy//copia e cola os valores de uma variavel em outra
 
-//tuples
+////////////////////tuples
 cordinates = (4, 5) 
 print(cordinates[0])
 
-//function
+////////////////////function
 def sayhi(name):
     print("olaaa " + name)
 
 sayhi("mikw")
 
-//return
+/////////////////////return
 def cube(num):
     return num*num*num //return quebra a função
 
 result = cube(3)
 print(result)
 
-//else if
+/////////////////////else if
 is_male = False
 is_tall = True
 
@@ -84,7 +84,7 @@ def max_num(num1, num2, num3):
 
 print(max_num(3, 40, 5))
 
-//dicionario
+/////////////////////dicionario
 monthConversions = {
     "Jan": "January",
     "Feb": "February",
@@ -101,7 +101,7 @@ monthConversions = {
 }
 print(monthConversions["Luv", "ivalid"])
 
-//while
+/////////////////////while
 i = 1
 while i <= 10:
     print(i)
