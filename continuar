@@ -15,3 +15,22 @@ while guess != secret_word and not (out_of_guesses):
 
 
 print("Parabeinss")
+
+
+
+//////////////moedas
+cinquenta = 0
+vinte5 = 0
+dez = 0
+
+dinheiro = float(input("dinheiro: "))
+while dinheiro >= 0.50:
+    cinquenta+=1
+    dinheiro -= 0.50
+while dinheiro >= 0.25:
+    vinte5+=1
+    dinheiro -= 0.25
+while dinheiro >= 0.10:
+    dez+=1
+    dinheiro -= 0.10
+print(cinquenta, vinte5, dez)
