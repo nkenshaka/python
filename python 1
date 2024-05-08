@@ -13,8 +13,24 @@ num1 = input("numero 1: ")
 num2 = input("numero 2: ")
 result = int(num1) + int(num2)
 
+num1 = float(input("enter first: "))
+op = input("enter op: ")
+num2 = float(input("enter second: "))
+
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "x":
+    print(num1 * num2)
+elif op == "/":
+    print(num1 / num2)
+else:
+    print("invali")
+
 print(result)
 
+//listas
 variavel.insert(posição, "nome") //insere
 variavel.extend //adiciona outra variavel
 variavel.apend //coloca no final
@@ -26,3 +42,68 @@ variavel.count(nome)//quantas vezes o nome aparece
 variavel.sort//organiza em ordem alfabetica ou numerica
 variavel.reverse//inverte as posições
 variavel.copy//copia e cola os valores de uma variavel em outra
+
+//tuples
+cordinates = (4, 5) 
+print(cordinates[0])
+
+//function
+def sayhi(name):
+    print("olaaa " + name)
+
+sayhi("mikw")
+
+//return
+def cube(num):
+    return num*num*num //return quebra a função
+
+result = cube(3)
+print(result)
+
+//else if
+is_male = False
+is_tall = True
+
+if is_male and is_tall:
+    print("You are a male or tall or both")
+elif is_male and not (is_tall):
+    print("shortieee")
+elif not (is_male) and is_tall:
+    print("not a male but tall")
+else:
+    print("You are not a male nor tall")
+
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+print(max_num(3, 40, 5))
+
+//dicionario
+monthConversions = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December",
+}
+print(monthConversions["Luv", "ivalid"])
+
+//while
+i = 1
+while i <= 10:
+    print(i)
+    i+= 1
+print("done")
