@@ -183,3 +183,96 @@ try:
 except:
     print("invalido")
 
+################reading files
+employee_file = open("employes.txt", "r")#ler informação
+open("employes.txt", "w")#modifica
+open("employes.txt", "a")#adicinar informação
+open("employes.txt", "r+")#ler e escreve
+
+print(employee_file.readable())#mostra se pode ler ou nao
+print(employee_file.reada())#ler informações
+print(employee_file.readline())#ler uma linha
+print(employee_file.readlines()[posição])#transforma lihas em uma lista e prita todas
+for employee in employee_file.readlines():
+    print(employee) #printa lihas
+employee_file.close()
+
+################wrinting files
+open("employes.txt", "a")#adicinar informação
+employee_file.write("\ntoby - hr") #adiciona a arquivo
+employee_file.close()
+
+open("employes.txt", "w")#modifica
+employee_file.write("\kelly - costumer servce") #overwrite o arquivo
+employee_file.close()
+
+open("employes1.txt", "w")#modifica
+employee_file.write("\kelly - costumer servce") #cria novo arquivo
+employee_file.close()
+
+###############modules e pip
+import file
+
+print(file.funtion)
+
+pip install nome #no terminal
+
+#################classes and objects
+class student:#define os atributos do objeto
+    def __init__(self, name, major, gpa, is_on_probation):
+        self.name = name #atribuir ao objeto
+        self.major = major
+        self.gpa = gpa
+        self.is_on_probation = is_on_probation
+from file import class #importa a classe em outro arquivo
+student1 = student("jim", "bussiness", 3.1, False)
+print(student.informação)
+
+################multiple choice quizz
+SEM CLASS
+
+
+def run_quiz(questions):
+    score = 0
+    for prompt, correct_answer in questions:#define "prompt" como a primeira parte e "correct_answer " como segunda e correta parte
+        user_answer = input(prompt).lower()  # Obtém a resposta do usuário e converte para minúsculas
+        if user_answer == correct_answer:
+            score += 1
+    print(f"You got {score}/{len(questions)} correct.")
+
+questions = [
+    ("What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n", "a"),
+    ("What color are bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n", "c"),
+    ("What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n", "b")
+]
+
+run_quiz(questions)
+
+COM CLASS
+
+class question:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+question_prompts = [
+"What color are apples? \n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",
+"What color are Bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n",
+"What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n"
+]
+questions = [
+    question(question_prompts [0], "a"), #se o input for a
+    question(question_prompts [1], "b"),#se o input for b
+    question(question_prompts [2], "c"),#se o input for c
+]
+def run_test(questions):
+    score = 0 
+    for question in questions:
+        answer = input(question.prompts)
+        if answer == question.answer:
+            score+=1
+    print("you got " + str(score) + "/" +str(len(questions)) + " corect")
+run_test(questions)
+
+################inheritance
+from chef import chef
+class chineseChef(chef) #pega as habilidades do chef para o chieseChef
