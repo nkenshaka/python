@@ -1,0 +1,13 @@
+################ function
+def sayhi(name):
+    print("olaaa " + name)
+
+sayhi("mikw")
+
+################ return
+def cube(num):
+    return num*num*num # return quebra a função
+
+result = cube(3)
+print(result)
+
