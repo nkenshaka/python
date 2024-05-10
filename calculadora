@@ -1,0 +1,22 @@
+################ calculadora
+num1 = input("numero 1: ")
+num2 = input("numero 2: ")
+result = int(num1) + int(num2)
+
+num1 = float(input("enter first: "))
+op = input("enter op: ")
+num2 = float(input("enter second: "))
+
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "x":
+    print(num1 * num2)
+elif op == "/":
+    print(num1 / num2)
+else:
+    print("invali")
+
+print(result)
+
