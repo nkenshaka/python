@@ -34,3 +34,15 @@ def potencia(base_num, pow_num):
     return result
 print(potencia(3, 4))
 
+################tradutor
+def translate(frase):
+    translation = "" #variavel q vai construindo a frase nova
+    for letter in frase: #fatora a string e armazena em "letter"
+        if letter in "AEIOUaeiou": #se letter estiver em AEIOUaeiou
+            translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input("coloque Frase: ")))#adiciona o input string ao parametro "frase"
+
