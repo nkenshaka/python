@@ -1,0 +1,27 @@
+################reading files
+employee_file = open("employes.txt", "r")#ler informação
+open("employes.txt", "w")#modifica
+open("employes.txt", "a")#adicinar informação
+open("employes.txt", "r+")#ler e escreve
+
+print(employee_file.readable())#mostra se pode ler ou nao
+print(employee_file.reada())#ler informações
+print(employee_file.readline())#ler uma linha
+print(employee_file.readlines()[posição])#transforma lihas em uma lista e prita todas
+for employee in employee_file.readlines():
+    print(employee) #printa lihas
+employee_file.close()
+
+################wrinting files
+open("employes.txt", "a")#adicinar informação
+employee_file.write("\ntoby - hr") #adiciona a arquivo
+employee_file.close()
+
+open("employes.txt", "w")#modifica
+employee_file.write("\kelly - costumer servce") #overwrite o arquivo
+employee_file.close()
+
+open("employes1.txt", "w")#modifica
+employee_file.write("\kelly - costumer servce") #cria novo arquivo
+employee_file.close()
+
