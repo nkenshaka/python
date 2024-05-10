@@ -1,14 +1,14 @@
-print(frase.upper().isupper()) //boolean
-print(len(frase)) //tamanho da variavél
-print(frase[0]) //o q tinha na posição
-print(frase.index("l")) //qual a posição
-print(frase.replace("x", "y")) //troca x por y
-print(str(my_num) + " numero favorito") //numero com string
+print(frase.upper().isupper()) # boolean
+print(len(frase)) # tamanho da variavél
+print(frase[0]) # o q tinha na posição
+print(frase.index("l")) # qual a posição
+print(frase.replace("x", "y")) # troca x por y
+print(str(my_num) + " numero favorito") # numero com string
 
 name = input("Nome")
 print("oii " +name+ " ")
 
-////////////////////calculadora
+################ calculadora
 num1 = input("numero 1: ")
 num2 = input("numero 2: ")
 result = int(num1) + int(num2)
@@ -30,37 +30,37 @@ else:
 
 print(result)
 
-//////////////////listas
-variavel.insert(posição, "nome") //insere
-variavel.extend //adiciona outra variavel
-variavel.apend //coloca no final
-variavel.remove(nome) //remove um nome
-variavel.clear//apaga a variavel
-variavel.pop//remove o ultimo
-variavel.index(nome)//indica a posição
-variavel.count(nome)//quantas vezes o nome aparece
-variavel.sort//organiza em ordem alfabetica ou numerica
-variavel.reverse//inverte as posições
-variavel.copy//copia e cola os valores de uma variavel em outra
+################ listas
+variavel.insert(posição, "nome") # insere
+variavel.extend # adiciona outra variavel
+variavel.apend # coloca no final
+variavel.remove(nome) # remove um nome
+variavel.clear # apaga a variavel
+variavel.pop # remove o ultimo
+variavel.index(nome) # indica a posição
+variavel.count(nome) # quantas vezes o nome aparece
+variavel.sort # organiza em ordem alfabetica ou numerica
+variavel.reverse # inverte as posições
+variavel.copy # copia e cola os valores de uma variavel em outra
 
-////////////////////tuples
+################ tuples
 cordinates = (4, 5) 
 print(cordinates[0])
 
-////////////////////function
+################ function
 def sayhi(name):
     print("olaaa " + name)
 
 sayhi("mikw")
 
-/////////////////////return
+################ return
 def cube(num):
-    return num*num*num //return quebra a função
+    return num*num*num # return quebra a função
 
 result = cube(3)
 print(result)
 
-/////////////////////else if
+################ else if
 is_male = False
 is_tall = True
 
@@ -73,7 +73,6 @@ elif not (is_male) and is_tall:
 else:
     print("You are not a male nor tall")
 
-
 def max_num(num1, num2, num3):
     if num1 >= num2 and num1 >= num3:
         return num1
@@ -84,7 +83,7 @@ def max_num(num1, num2, num3):
 
 print(max_num(3, 40, 5))
 
-/////////////////////dicionario
+################ dicionario
 monthConversions = {
     "Jan": "January",
     "Feb": "February",
@@ -101,9 +100,86 @@ monthConversions = {
 }
 print(monthConversions["Luv", "ivalid"])
 
-/////////////////////while
+################ while
 i = 1
 while i <= 10:
     print(i)
     i+= 1
 print("done")
+
+################ for loops
+for letter in "oiii":
+    print(letter)
+
+friends = ["jim", "karen", "Kevin"]
+for index in range(len(friends)):
+    print(friends[index])
+
+friends = ["jim", "karen", "Kevin"]
+for friend in friends:
+    print(friend) # prints the elements
+
+for index in range(10):
+    print(index)
+
+for index in range(5):
+    if index == 0:
+        print("primeira vez")
+    else:
+        print("nao eh a prmeira")
+
+################ função exponenciação
+def potencia(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+print(potencia(3, 4))
+
+################listas
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+print(number_grid[0][1])
+
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+for row in number_grid:
+    print(row)
+
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+for row in number_grid:
+    for col in row:
+        print(col)
+
+################tradutor
+def translate(frase):
+    translation = "" #variavel q vai construindo a frase nova
+    for letter in frase: #fatora a string e armazena em "letter"
+        if letter in "AEIOUaeiou": #se letter estiver em AEIOUaeiou
+            translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input("coloque Frase: ")))#adiciona o input string ao parametro "frase"
+
+################try/except
+try:
+   number = int(input("numero: "))
+   print(number)
+except:
+    print("invalido")
+
