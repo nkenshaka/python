@@ -1,0 +1,7 @@
+###############modules e pip
+import file
+
+print(file.funtion)
+
+pip install nome #no terminal
+
