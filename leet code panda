@@ -1,0 +1,5 @@
+import pandas as pd #nomeia a biblioteca como "pd"
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame: #função com parametro "employees" do tipo pd
+    return employees.head(3)# método head(3) do DataFrame (manipulam dados) employees
+    
